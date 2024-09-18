@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column; /*修改為縱向布局*/ 
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /*禁用滾動*/
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+
+    border: 1px solid #db3553;
+    border-radius: 12px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.center-container button {
+    width: 30%;
+    background-color: rgb(76, 163, 175);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* 將內容置中 */
+    justify-content: center;
+    align-items: center;
+    margin-left:34% /*暫時性設定*/
+}
+
+.center-container input {
+    width: 230px;
+    display: block;
+    margin-bottom: 10px;
+}
+

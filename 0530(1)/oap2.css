@@ -1,0 +1,154 @@
+body *:not(.header) {
+    margin-left: 1%;  
+    margin-right: 1%;
+}
+
+/* 邊框設定 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top:0;
+    width:100%;
+    margin:0;
+    padding:7px;
+    background: #3c3c3c;
+}
+
+
+/*S跟O設定*/
+textarea.SS,
+textarea.SO
+{
+    box-sizing: border-box;
+    height: 100px;
+    /* 因為他在flexbox裡了所以有點像是在box左半邊的100%，要修改寬度可以動width */
+    width: 95%; /*寬度*/
+    word-wrap: break-word ;
+    overflow-wrap: break-word ;
+    word-break: break-all ;
+    resize: none;
+}
+
+textarea.SP
+    {
+    margin-left: 2%;
+    box-sizing:border-box;
+    height: 200px;
+    width: 96.5%;
+
+}
+.ICD10 {
+    display: flex;
+    flex-direction: column; /* 使元素垂直排列 */
+    max-height: 340px; /* 容器的最大高度 */
+    overflow-y: auto; /* 設定垂直滾動條 */
+    width: 100%; /* 容器寬度 */
+}
+
+.row {
+    display: flex;
+    align-items: center; /* 在行內垂直居中對齊元素 */
+    margin-bottom: 1px; /* 行之間的間隔 */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Checkbox 和 textarea 之間的間隔 */
+}
+
+textarea.ICD10Row{
+    flex: 0.25; /* 兩個 textarea 平均分配剩餘空間 */
+    margin-right: 10px; /* Textarea 之間的間隔，最後一個 textarea 可以不設定 */
+    
+}
+textarea.symptomRow{
+    flex:0.75
+}
+
+
+textarea.medicalRow{
+    margin-left: -1%;
+    width: 10%;
+}
+
+textarea.discriptionRow{
+    width:80%
+}
+
+/* ICD10區的按鈕位置 */
+input[type="button"].BA,
+input[type="button"].RF{
+    margin-top: 10px; 
+}
+
+input[type="button"].BP{
+    margin-top:20px;
+    margin-left: 2%;
+    align-self: center;
+}
+
+
+.button-ICD10{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.section1 {
+    display: flex;
+}
+
+.left,.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+}
+.areaS, .areaO {
+    flex: 50%;
+}
+
+input[type="button"].BO{
+    align-self:left;
+    
+}
+
+.areaO {
+    position: relative;
+}
+
+textarea.SO {
+    width: 95%; /* 確保 textarea 保持原樣 */
+}
+
+.button-areaO {
+    position: absolute;
+    right: 20px;
+    bottom: 10px; /* 調整這個值來改變按鈕的垂直位置 */
+}
+
+.BO {
+    margin-left: auto; /* 自動將按鈕推到右邊 */
+}
+
+input[type="button"].BP{
+    margin-left: 1%;
+}
+
+h2.P {
+    margin-left: 2%; /* 根據需要調整 */
+    padding-top: 10px; /* 根據需要調整 */
+}
+
+h2.A{
+    margin-left: 4%;
+}

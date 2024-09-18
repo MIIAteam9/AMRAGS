@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>自動化病歷輔助生成系統</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="oap2.css">
+    <script src="connectToAI.js" defer></script>
+    <script src="connectToDB.js" defer></script>
+    <script src="pdfadjust.js" defer></script>
+    <script src="jspdf.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>自動化病歷輔助生成系統</h1>
+    </div>
+        <h3 class="FRAME"></h3>   
+        <div class="section1">
+            <div class="left">
+                <div class="areaS">
+                    <h2 class="S">Subjective</h3>
+                        <textarea id="user-input-S" class="SS"></textarea>
+                </div>
+                <div class="areaO">
+                        <h2 class="O">Objective</h3>
+                        <textarea id="database-input-O" class="SO"></textarea>
+                        <div class="button-areaO">
+                            <input type="button" class="BO" value="Generate A" onclick=sendAssessment()>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right">
+                <h2 class="A">ICD-10</h3>      
+                    <!-- 表格 -->
+                <div class="ICD10">
+                    <div class="ICD10TABLE">
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox">
+                            <textarea class="ICD10Row"></textarea>
+                            <textarea class="symptomRow"></textarea>
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <div class="button-ICD10">
+                    <input type="button" class="BA" value="Generate Plan"onclick=sendPlan()>
+                    <input type="button" id="store" class="RF" value="Refresh" onclick=storeOnclick()>
+                </div>
+            </div>
+        </div>
+        <div class="areaP">
+            <h2 class="P">Plan</h2>
+                <div class="plan">
+                    <div class="plantable">
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                        <div class="row1">
+                            <textarea class="medicalRow"></textarea>
+                            <textarea class="discriptionRow"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div class="button-areaP">
+                <input type="button" class="BP" value="Download PDF" onclick=downLoad()>
+            </div>
+        </div>
+    </body>
+    </html>
+    

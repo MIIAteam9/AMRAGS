@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動化病歷輔助系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mode1">
+        <!-- Include the navbar using iframe -->
+        <iframe src="navbar.html" width="100%" height="80px" style="border: none;"></iframe>
+    </div>
+
+    <div id="login-container" class="center-container">
+        <h2>輸入病歷號</h2>
+        <form action="oap1.html" method="get">
+            <label for="record_id">病歷號碼：</label>
+            <input type="text" id="record_id" name="record_id" required><br>            
+            <button type="submit">送出</button>
+        </form>
+    </div>
+</body>
+</html>

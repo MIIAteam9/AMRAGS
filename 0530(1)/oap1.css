@@ -1,0 +1,112 @@
+.header{
+    text-align: center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    background: #3c3c3c;
+}
+
+
+.title1,.title2{
+    margin-left: 40px;
+}
+
+textarea.SS,
+textarea.SS:placeholder-shown,
+textarea.SS:focus,
+.SS
+.textarea.SO,
+textarea.SO:placeholder-shown,
+.textarea.SO:focus,
+.SO{
+    box-sizing: border-box;
+    height: 150px ;
+    width: 800px ;
+    word-wrap: break-word ;
+    overflow-wrap: break-word ;
+    word-break: break-all ;
+}
+
+textarea.SA,
+textarea.SA:placeholder-shown,
+textarea.SA:focus,
+.SA{
+    box-sizing: border-box;
+    height: 375px ;
+    width: 800px ;
+    word-wrap: break-word ;
+    overflow-wrap: break-word ;
+    word-break: break-all 
+}
+
+.textarea.SP,
+textarea.SP:placeholder-shown,
+.textarea.SP:focus,
+.SP{
+    box-sizing: border-box;
+    height: 150px ;
+    width: 1695px ;
+    word-wrap: break-word ;
+    overflow-wrap: break-word ;
+    word-break: break-all 
+}
+
+
+.SO:placeholder-shown{
+    height: 150px;
+    width: 800px;
+}
+
+.SA:placeholder-shown{
+    height: 365px;
+    width: 910px;
+}
+
+.SP:placeholder-shown{
+    height:600px;
+    width: 1800px;    
+}
+
+.SS,.SO,.SP,.P,.S,.O,.SA{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.SA{
+    position: absolute;
+    left: 900px;
+    top: 300px;
+}
+
+.A{
+    position: absolute;
+    left: 940px;
+    top: 240px;  
+}
+
+.BA{
+    position:absolute;
+    left: 1750px;
+    top: 650px;
+}
+.BO{
+    position: absolute;
+    left: 850px;
+    top:645px;
+}
+
+textarea#textareaInput1::placeholder,
+textarea#textareaInput2::placeholder,
+textarea#textareaInput3::placeholder,
+textarea#textareaInput4::placeholder,
+textarea#textareaInput5::placeholder,
+textarea#textareaInput6::placeholder,
+textarea#textareaInput7::placeholder,
+textarea#textareaInput8::placeholder {
+    box-sizing: border-box;
+    height: 40px !important;
+    width: 1000px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+}
